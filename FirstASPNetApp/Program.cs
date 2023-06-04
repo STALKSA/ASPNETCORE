@@ -8,7 +8,7 @@ app.MapGet("/new_year", () =>
     var newYearDate = new DateTime(currentDate.Year + 1, 1, 1);
     var daysUntilNewYear = (newYearDate - currentDate).Days;
 
-    return $"До Нового года осталось {daysUntilNewYear} дней";
+    return $"{daysUntilNewYear} days left until the New Year";
 });
 
 app.Run();
