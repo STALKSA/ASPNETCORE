@@ -18,5 +18,5 @@ app.Run();
 
 
 //   /current_datetime?language = fr
-//   /current_datetime?language = fr
-//   /current_datetime?language = fr
+//   /current_datetime?language = az
+//   /current_datetime?language = aa
