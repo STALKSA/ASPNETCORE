@@ -1,11 +1,10 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/customs_duty", () =>
+app.MapGet("/customs_duty", (decimal price) =>
 {
-    decimal price = 200m;
     decimal customsDuty = CalculateCustomsDuty(price);
-    return $"Customs duty: {customsDuty}ˆ";
+    return $"Customs duty: {customsDuty}Ë†";
 });
 
 decimal CalculateCustomsDuty(decimal price)
